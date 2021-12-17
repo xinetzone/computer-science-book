@@ -5,6 +5,8 @@
 :maxdepth: 2
 :hidden:
 
+install
+test
 about/index
 ```
 
