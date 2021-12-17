@@ -44,20 +44,33 @@ jobs:
           pip install --upgrade pip
           pip install -r docs/requirements.txt
 
+      - uses: actions/setup-java@v2
+        with:
+          distribution: 'temurin' # See 'Supported distributions' for available options
+          java-version: '17'
+
+      - name: Setup IJava
+        env:
+          ijava-version: 1.3.0
+        run: |
+          wget https://github.com/SpencerPark/IJava/releases/download/v${{ env.ijava-version }}/ijava-${{ env.ijava-version }}.zip
+          unzip ijava-1.3.0.zip -d IJava
+          cd IJava
+          python3 install.py --sys-prefix
+
       - name: 🔧 Build HTML
         run: |
           cd docs
           make html
-          sphinx-build -D language=en -b html ./ _build/html/en
 
-      # remove the .doctrees folder when building for deployment as it takes two thirds of disk space
+      # remove the folder when building for deployment as it takes two thirds of disk space
       - name: 🔥 Clean up files
-        run: rm -r docs/_build/doctrees/
+        run: |
+          rm -r docs/_build/doctrees/ IJava/
 
       - name: 🚀 Deploy to GitHub pages
         uses: peaceiris/actions-gh-pages@v3.6.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: docs/_build/html
-          user_name: "github-actions[bot]"
-          user_email: "github-actions[bot]@users.noreply.github.com"
+
