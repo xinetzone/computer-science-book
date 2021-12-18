@@ -22,7 +22,7 @@ sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'computer-science-book'
+project = 'java-demo'
 copyright = '2021, xinetzone'
 author = 'xinetzone'
 
@@ -75,7 +75,7 @@ comments_config = {
     "hypothesis": True,
     "dokieli": False,
     "utterances": {
-        "repo": "xinetzone/computer-science-book",
+        "repo": "xinetzone/java-demo",
         "optional": "config",
     }
 }
@@ -183,7 +183,7 @@ html_theme_options = {
     # 默认情况下，编辑按钮将指向版本库的根。
     # 如果你的文档被托管在一个子文件夹中，请使用以下配置：
     "path_to_docs": "docs/",  # 文档的路径，默认 `docs/``
-    "repository_url": "https://github.com/xinetzone/computer-science-book",
+    "repository_url": "https://github.com/xinetzone/java-demo",
     "repository_branch": "main",  # 文档库的分支，默认 `master`
     # -- 在导航栏添加一个按钮，链接到版本库的议题 ------------------------------
     # （与 `repository_url` 和 `repository_branch` 一起使用）
@@ -214,7 +214,7 @@ html_theme_options = {
     # 重命名页内目录名称
     "toc_title": "导航",
     "launch_buttons": {
-        # https://mybinder.org/v2/gh/xinetzone/computer-science-book/main
+        # https://mybinder.org/v2/gh/xinetzone/java-demo/main
         "binderhub_url": "https://mybinder.org",
         # "jupyterhub_url": "https://datahub.berkeley.edu",  # For testing
         "colab_url": "https://colab.research.google.com/",
@@ -236,7 +236,7 @@ html_favicon = "page-logo.jfif"
 # ========== ABlog 配置 ============================================================
 blog_path = "posts"
 blog_post_pattern = "posts/*.md"
-blog_baseurl = "https://xinetzone.github.io/computer-science-book"
+blog_baseurl = "https://xinetzone.github.io/java-demo"
 fontawesome_included = True
 post_auto_image = 1
 post_auto_excerpt = 2
