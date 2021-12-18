@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh_CN">
-  <id>https://xinetzone.github.io/computer-science-book</id>
+  <id>https://xinetzone.github.io/java-demo</id>
   <title>Blog</title>
-  <updated>2021-12-17T06:22:49.929587+00:00</updated>
-  <link href="https://xinetzone.github.io/computer-science-book"/>
-  <link href="https://xinetzone.github.io/computer-science-book/zh_CN/posts/atom.xml" rel="self"/>
+  <updated>2021-12-18T08:22:11.196754+00:00</updated>
+  <link href="https://xinetzone.github.io/java-demo"/>
+  <link href="https://xinetzone.github.io/java-demo/zh_CN/posts/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.21">ABlog</generator>
 </feed>
